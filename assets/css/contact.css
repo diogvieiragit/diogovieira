@@ -3,39 +3,56 @@
     padding: 20px;
   }
 
-  .contact-card .icon img {
-    width: 47px; 
-    height: auto;
-    margin-bottom: 15px;
-    user-select: none;
-    -webkit-user-drag: none;
-  }
+.contact-card .contact-icon img {
+  width: 47px; 
+  height: auto;
+  margin-bottom: 15px;
+  user-select: none;
+  -webkit-user-drag: none;
+  transition: transform 0.5s ease-in-out;
+  
+}
 
-  .contact-card p {
-    margin: 10px 0;
-    color: #959595;
-    user-select: none;
-    -webkit-user-drag: none;
-    display: inline-block;
-  }
+.contact-card .contact-icon img:hover {
+  transform: scale(1.14);
+}
 
-  .contact-card p strong {
-    user-select: all;
-    color: #ffffff;
-  }
 
-  .contact-card p strong a {
-    color: #ffffff;
-    text-decoration: none;
-  }
+.contact-card p {
+  margin: 10px 0;
+  color: #959595;
+  user-select: none;
+  -webkit-user-drag: none;
+  display: inline-block;
+}
+
+.contact-card p strong {
+  user-select: all;
+  color: #ffffff;
+}
+
+.contact-card p strong a {
+  color: #ffffff;
+  text-decoration: none;
+}
 
 
 ::selection {
-    background-color: #959595;
-    color: #ffffff;
+  background-color: #959595;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #959595;
+  color: #ffffff;
+}
+
+
+
+@media (max-width: 768px) {
+  .contact-card .contact-icon img:hover {
+      transform: none;
+      filter: none;
   }
-  
-  ::-moz-selection {
-    background-color: #959595;
-    color: #ffffff;
-  }
+}
+
