@@ -8,6 +8,10 @@ main {
     margin: 0 auto; 
     text-align: left; 
     padding: 4rem 1.6rem 4rem 1.6rem; 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    user-select: none;
 }
 
 .textos .tittle {
@@ -30,6 +34,10 @@ main {
     text-align: center; 
     margin-top: 20px; 
     padding-top: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    user-select: none;
 }
 
 .carousel-container {
