@@ -4,7 +4,7 @@ const body = document.body;
 
 hamburger.addEventListener("click", () => {
     nav.classList.toggle("active");
-    body.classList.toggle("overflow-hidden"); // Impede rolagem ao abrir o menu
+    body.classList.toggle("overflow-hidden"); 
 });
 
 
@@ -63,14 +63,14 @@ function resetActiveIcon() {
 
 
 document.querySelectorAll('.icon').forEach(img => {
-    // Eventos para desktop (hover)
+    
     img.addEventListener('mouseover', () => applyHoverEffect(img, true));
     img.addEventListener('mouseout', () => applyHoverEffect(img, false));
 
-    // Eventos para dispositivos móveis (toque)
+    
     ['click', 'touchstart'].forEach(evt => {
         img.addEventListener(evt, (event) => {
-            event.preventDefault(); // Evita comportamento indesejado
+            event.preventDefault(); 
             event.stopImmediatePropagation(); 
     
             if (activeIcon === img) {
@@ -86,10 +86,10 @@ document.querySelectorAll('.icon').forEach(img => {
     
 });
 
-// Fecha o ícone ativo ao clicar fora dele
+
 document.addEventListener('click', (event) => {
     if (!event.target.classList.contains('icon')) {
-        resetActiveIcon(); // Reseta ícones se o clique for fora de um ícone
+        resetActiveIcon(); 
     }
 });
 
@@ -97,7 +97,7 @@ document.addEventListener('click', (event) => {
 
 function scrollCarousel(direction) {
     const carousel = document.querySelector(".carousel");
-    const scrollAmount = 350; // Ajuste para definir o quanto rola por clique
+    const scrollAmount = 350;
     carousel.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
 }
 
