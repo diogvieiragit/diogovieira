@@ -298,7 +298,7 @@
     transition: 0.5s 0.6s;
     }
 
-    /* Estilos ativos */
+   
 
     .nav.active .nav-list {
         opacity: 1;
