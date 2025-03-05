@@ -55,10 +55,17 @@ main {
     display: flex;
     gap: 15px;
     overflow-x: auto;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     padding: 10px;
     max-width: 90%;
+    cursor: grab; 
+    white-space: nowrap; 
 }
+
+.carousel:active {
+    cursor: grabbing;
+}
+
 
 .carousel::-webkit-scrollbar {
     display: none; 
@@ -71,7 +78,7 @@ main {
     border-radius: 12px;
     object-fit: cover;
     cursor: default; 
-    transition: transform 0.3s ease, box-shadow 0.5s ease;
+    transition: transform 0.3s ease, box-shadow 1.1s ease;
     -webkit-user-drag: none;
 }
 
