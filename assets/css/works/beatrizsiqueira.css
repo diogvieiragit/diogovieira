@@ -88,18 +88,7 @@ main {
 }
 
 .prev, .next {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 15px; 
-    font-size: 28px; 
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    border-radius: 100%; 
-    transition: transform 0.2s ease, background-color 0.3s ease;
+    display: none;
 }
 
 .prev:hover, .next:hover {
@@ -113,10 +102,6 @@ main {
 
 
 @media (max-width: 768px) {
-    .prev, .next {
-        display: none; 
-    }
-
     .carousel img:hover {
         transform: none;
         box-shadow: none; 

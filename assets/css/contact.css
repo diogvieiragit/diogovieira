@@ -9,12 +9,7 @@
   margin-bottom: 15px;
   user-select: none;
   -webkit-user-drag: none;
-  transition: transform 0.5s ease-in-out;
   
-}
-
-.contact-card .contact-icon img:hover {
-  transform: scale(1.14);
 }
 
 

@@ -1,0 +1,54 @@
+{
+  "subtitle": "UX/UI Designer and systems developer",
+  "description": "Student of Systems Analysis and Development at FIAP, developing and creating with a focus on modern aesthetics.",
+  "webdev": "Web Dev and UX/UI",
+  "database": "Database",
+  "sysdev": "Systems Development",
+  "nav-work": "Work",
+  "nav-about": "About",
+  "nav-contact": "Contact",
+
+
+
+  "work-bs": "Beatriz Siqueira, Architecture Portfolio - 2025",
+  "work-sto": "Save the ocean - 2024",
+  "work-ifood": "Ifood Control - 2024",
+  "work-cc": "CashCare - 2024",
+  
+  "contact-email": "Send an email to",
+  "contact-whatsapp": "Give me a hello on my WhatsApp",
+  "contact-linkedin": "Connect with me on LinkedIn",
+
+  "about-motivation": "User experience, attention to detail, and the constant pursuit of perfection are what drive me.",
+  "about-experience-title": "Experience",
+  "about-education-title": "Education",
+  "about-extra-title": "Extra",
+
+  "exp-tozzini": "TozziniFreire Advogados\nBilingual Support, 2023/2024",
+  "exp-gru": "GRU Airport\nBilingual Support, 2021/2022",
+  "exp-bizpro": "BizPro\nIT Apprentice, 2016/2017",
+  "edu-fiap": "FIAP\nSystems Analysis and Development, 2024/2026",
+  "extra-alura": "Alura\nUX/UI Design, 2024\nFigma, 2024\nChatGPT, 2024\nBootstrap, 2024",
+
+
+
+  "project-sto-title": "Save The Ocean - 2024",
+  "project-sto-text-1": "Educational Global Solution project proposed by FIAP University, aiming to address a global issue — in this case, ocean life.",
+  "project-sto-text-2": "The system was created to connect ordinary citizens with NGOs and companies working daily to save the planet's oceans. It's a simple, fast, and intuitive app designed to serve as a practical and direct donation channel.",
+  "project-sto-text-3": "All visual identity was created from scratch, including the logo, color scheme, and system design. Since this is an educational project, only Figma, HTML, CSS, JavaScript, and Bootstrap were used to reach the final result.",
+
+  "project-bs-title": "Beatriz Siqueira, Architecture Portfolio - 2025",
+  "project-bs-text-1": "Portfolio website creation for the architect Beatriz Siqueira.",
+  "project-bs-text-2": "The site features a minimalist and modern look, intended to be a clean and objective space. The entire visual identity was created from scratch, including the logo, colors, and page design — all consistently reviewed and approved by the client.",
+  "project-bs-link": "Visit the website",
+
+  "project-cc-title": "CashCare - 2024",
+  "project-cc-text-1": "Educational project proposed by FIAP University. CashCare was developed as a personal finance app to help users manage expenses and plan future earnings in a simple, fast, and intuitive way.",
+  "project-cc-text-2": "All visual identity was created from scratch, including the logo, colors, and system design. Since it is an educational project, only Figma, HTML, CSS, JavaScript, and Bootstrap were used to reach the final result.",
+
+  "project-ifood-title": "Ifood Control - 2024",
+  "project-ifood-text-1": "Educational project proposed by FIAP University in partnership with Ifood. The system acts as a backoffice solution for restaurants registered on the platform, offering features like report generation, balance access, orders overview, and a wide range of statistics.",
+  "project-ifood-text-2": "The entire visual identity was designed to follow the company's standards, keeping the colors and visual elements consistent. As an educational project, it was built using only Figma, HTML, CSS, JavaScript, and Bootstrap."
+
+  
+}

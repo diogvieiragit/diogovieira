@@ -1,78 +1,158 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/D.svg" type="image/x-icon">
-    <title>Diogo Vieira</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/D.svg" type="image/x-icon">
+  <title>Diogo Vieira</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./custom.css">
+  
+  <script>
+    (() => {
+      const lang = localStorage.getItem("language") || "pt";
+      document.documentElement.lang = lang;
+      window.__lang = lang;
+      document.write('<style>body{visibility:hidden}</style>');
+    })();
+  </script>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./custom.css">
 </head>
 
 <body class="bg-custom">
 
+  <header>
+    <nav class="nav">
+      <a href="./index.html" class="logo"> <img src="./assets/images/D_logo.svg" alt="Diogo Vieira"
+          width="37rem"></a>
+      <button class="hamburger"></button>
+      <ul class="nav-list">
+        <li><a href="./assets/pages/work.html" data-i18n="nav-work">Trabalhos</a></li>
+        <li><a href="./assets/pages/about.html" data-i18n="nav-about">Sobre</a></li>
+        <li><a href="./assets/pages/contact.html" data-i18n="nav-contact">Contato</a></li>
 
-    <header>
+        <li class="d-flex align-items-center me-3 language-toggle">
+          <span class="lang-label pt-label me-2">PT</span>
+          <label class="custom-switch d-flex align-items-center">
+            <input type="checkbox" id="languageSwitcher">
+            <span class="slider"></span>
+          </label>
+          <span class="lang-label en-label ms-2">EN</span>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-        <nav class="nav">
-            <a href="./index.html" class="logo"> <img src="./assets/images/D_logo.svg" alt="Diogo Vieira" width="37rem"></a>
-            <button class="hamburger"></button>
-            <ul class="nav-list">
-              <li><a href="./assets/pages/work.html">Trabalhos</a></li>
-              <li><a href="./assets/pages/about.html">Sobre</a></li>
-              <li><a href="./assets/pages/contact.html">Contato</a></li>
-            </ul>
-          </nav>
+  <main class="content-container">
 
-    </header>
+    <section class="container-fluid ps-5 pe-5 pt-5 pb-5 mb-5">
+      <div class="text1">
+        <h1 class="text-start tittle ps-5 pe-5 pt-5"><span class="name">Diogo Vieira</span>,</h1>
+        <h2 class="text-start subtittle ps-5 pe-5 pt-2" data-i18n="subtitle">
+          UX/UI Designer e desenvolvedor de sistemas
+        </h2>
+        <h5 class="text-start description ps-5 pe-5 pt-2 d-sm-block col-12 col-md-6" data-i18n="description">
+          Estudante de Análise e Desenvolvimento de Sistemas pela FIAP, desenvolvendo e criando com foco na estética moderna.
+        </h5>
+      </div>
+    </section>
 
+    <section class="content-flex">
+      <div class="galeria col-lg-8 col-md-12">
+        <figure class="itemGaleria item01">
+          <img src="./assets/images/256.png" class="imgGaleria" alt="Imagem 1" loading="eager">
+          <a href="./assets/pages/work.html" class="overlay">
+            <img src="./assets/images/monitor-fill.svg" alt="Ícone" class="icon">
+            <span class="overlay-text" data-i18n="webdev">Des. Web e UX/UI</span>
+          </a>
+        </figure>
 
-    <main class="content-container">
+        <figure class="itemGaleria item02">
+          <img src="./assets/images/bgfd.png" class="imgGaleria" alt="Imagem 1" loading="eager">
+          <a href="./assets/pages/work.html" class="overlay">
+            <img src="./assets/images/database-fill.svg" alt="Ícone" class="icon">
+            <span class="overlay-text" data-i18n="database">Banco de dados</span>
+          </a>
+        </figure>
 
-            
-        <section class="container-fluid ps-5 pe-5 pt-5 pb-5 mb-5">
+        <figure class="itemGaleria item03">
+          <img src="./assets/images/bgyu.png" class="imgGaleria" alt="Imagem 1" loading="eager">
+          <a href="./assets/pages/work.html" class="overlay">
+            <img src="./assets/images/coffee-fill.svg" alt="Ícone" class="icon">
+            <span class="overlay-text" data-i18n="sysdev">Des. Sistemas</span>
+          </a>
+        </figure>
+      </div>
 
-            <div class="text1">
-                <h1 class="text-start tittle ps-5 pe-5 pt-5"><span class="name">Diogo Vieira</span>,</h1>
-                <h2 class="text-start subtittle ps-5 pe-5 pt-2">UX/UI Designer e desenvolvedor de sistemas</h2>
-                <h5 class="text-start description ps-5 pe-5 pt-2 d-sm-block col-12 col-md-6">Estudante de Análise e Desenvolvimento de Sistemas pela FIAP, desenvolvendo e criando com foco na estética moderna.</h5>
+      <div class="side-content">
+        <video autoplay loop muted playsinline class="w-100 h-100 movie" style="object-fit: cover;">
+          <source src="./assets/images/0429.mov" type="video/mp4">
+          Seu navegador não suporta vídeos HTML5.
+        </video>
+      </div>
+    </section>
 
-            </div>
+  </main>
 
-        </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script src="./scripts.js"></script>
 
-        <section class="skills pb-4">
-            <div class="container pb-4">
-                <div class="row text-center">
-                    <div class="col-lg-4 icons-spaces mb-5 pt-1">
-                        <img id="monitor-icon" src="./assets/images/home/rectangle-duotone.svg" alt="Monitor" class="img-fluid icon" width="90rem">
-                        <h2 class="skills-text pt-4 pb-5">Web design e páginas responsivas</h2>
-                    </div>
-                    <div class="col-lg-4 eye mb-5 pt-1">
-                        <img id="eye-icon" src="./assets/images/home/eye-closed-duotone.svg" alt="Olho" class="img-fluid icon" width="90rem">
-                        <h2 class="skills-text pt-4 pb-5">Desenvolvimento com um olhar detalhista</h2>
-                    </div>
-                    <div class="col-lg-4 book mb-5 pt-1">
-                        <img id="book-icon" src="./assets/images/home/book-duotone.svg" alt="Livro" class="img-fluid icon" width="90rem">
-                        <h2 class="skills-text pt-4 pb-5">E sempre buscando por mais</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
+  <!-- Script -->
+  <script>
+    const switcher = document.getElementById("languageSwitcher");
 
+    async function loadLanguage(lang) {
+      try {
+        const response = await fetch(`./locales/${lang}.json`);
+        const translations = await response.json();
 
-        </section>
-        
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[key]) {
+            el.textContent = translations[key];
+          }
+        });
 
-    </main>
+        localStorage.setItem("language", lang);
+        if (switcher) switcher.checked = lang === "en";
+        updateLangLabels(lang);
+      } catch (error) {
+        console.error("Erro ao carregar idioma:", error);
+      } finally {
+        document.body.style.visibility = "visible";
+      }
+    }
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="./scripts.js"></script>
+    function updateLangLabels(lang) {
+      const ptLabel = document.querySelector('.pt-label');
+      const enLabel = document.querySelector('.en-label');
+      if (ptLabel && enLabel) {
+        ptLabel.style.color = lang === 'pt' ? 'white' : '#888';
+        enLabel.style.color = lang === 'en' ? 'white' : '#888';
+      }
+    }
+
+    if (switcher) {
+      switcher.addEventListener("change", () => {
+        const lang = switcher.checked ? "en" : "pt";
+        loadLanguage(lang);
+      });
+
+      const savedLang = window.__lang || localStorage.getItem("language") || "pt";
+      switcher.checked = savedLang === "en";
+      updateLangLabels(savedLang);
+      loadLanguage(savedLang);
+    } else {
+      console.warn("Switcher de idioma não encontrado.");
+      document.body.style.visibility = "visible";
+    }
+  </script>
+
 </body>
 
 </html>
